@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    nav {
+      background-color: rgb(50, 50, 54);
+      display: flex;
+      justify-content: space-around;
+    }
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      list-style: none;
+      padding: 10px;
+      background-color: rgb(50, 50, 54);
+    }
+    ul li:hover {
+      background-color: rgb(146, 146, 148);
+    }
+    li.act:hover ul.come {
+      display: block;
+    }
+    ul.come {
+      display: none;
+      position: absolute;
+      margin-top: 10px;
+      padding: 1px;
+    }
+    li.life {
+      width: 100%;
+      padding: 24px;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li class="act">
+          link
+
+          <ul class="come">
+            <li class="life">link</li>
+            <li class="life">link</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

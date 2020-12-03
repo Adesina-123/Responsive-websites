@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-nav {
+    display: flex;
+    margin: 10px 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    font-size: 1.3em;
+  }
+    
+  /* .main-nav > * {
+    cursor: pointer;
+  }
+
+  .main-nav > li:hover {
+    color: #f2f2f2;
+  }
+
+  .nested-nav:hover .hidden-nav {
+    display: block;
+  }
+  .toggle {
+    display: none;
+  }
+
+  .hidden-nav {
+    display: none;
+    background-color: grey;
+    padding: 10px 30px;
+    position: absolute;
+    list-style: none;
+  }
+  .hidden-nav > li {
+    padding: 10px;
+  }
+
+  .hidden-nav > li:hover {
+    color: tomato;
+  } */
+  /* .main-nav li:hover {
+      background-color: green;
+  }
+  .hidden-nav {
+     background-color: blue; 
+     position: absolute;
+     padding: 10px 30px;
+  }
+  .hidden-nav li:hover {
+    background-color: green;
+  }
+  .lo {
+      margin-bottom: 5px;
+  } */
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  nav {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul {
+    display: flex;
+    gap: 9px;
+}
+ul li {
+    display: flex;
+    color: white;
+    gap: 5px;
+    padding: 10px;
+    background: black;
+}
+ul li:hover {
+    background-color: green;
+}
+li.act ul.come {
+    display: block;
+    
+}
+nav.list {
+    flex-direction: column;
+    position: absolute;
+    margin-top: 10px;
+    /* display: none; */
+}
+ul.come {
+    flex-direction: column;
+    position: absolute;
+    margin-top: 20px;
+}
+.life {
+    width: 100px;
+}
+  
+li.act ul.come:hover {
+    display: block;
+}
+</style>
+<body>
+<nav>   
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li class="act">link
+                 
+                <ul class="come">
+                    <li class="life">link</li>
+                    <li class="life">link</li>
+                </ul>
+        
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
